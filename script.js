@@ -43,10 +43,10 @@ const createPokemonCard = (pokemon) => {
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1)
     const id = pokemon.id.toString().padStart(3, '0')
 
-    const poke_types = pokemon.types.map(type => type.type.name)
+    const poke_types = pokemon.types.map(type => type.type.name[0].toUpperCase() + type.type.name.slice(1))
     const type = main_types.find(type => poke_types.indexOf(type) > -1)
     const color = colors[type]
-    const poke_abilities = pokemon.abilities.map(ability => ability.ability.name)
+    const poke_abilities = pokemon.abilities.map(ability => ability.ability.name[0].toUpperCase() + ability.ability.name.slice(1))
     const ability = poke_abilities[0]
 
     pokemonEl.style.backgroundColor = color
