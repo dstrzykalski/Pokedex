@@ -1,4 +1,5 @@
 # Pokedex
+
 This project is a Pokedex application that allows users to search and view information about various Pokemon. The application provides details such as Pokemon names, types, abilities, and stats. It is built using modern web technologies and aims to offer a user-friendly interface for Pokemon enthusiasts.
 
 ## Features
