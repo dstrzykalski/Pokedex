@@ -46,6 +46,7 @@ const createPokemonCard = (pokemon) => {
     const poke_types = pokemon.types.map(type => type.type.name)
     const type = main_types.find(type => poke_types.indexOf(type) > -1)
     const color = colors[type]
+    const ability = pokemon.abilities.map(ability => ability.ability.name)
 
     pokemonEl.style.backgroundColor = color
 
@@ -57,6 +58,8 @@ const createPokemonCard = (pokemon) => {
         <span class="number">#${id}</span>
         <h3 class="name">${name}</h3>
         <small class="type">Type: <span>${type}</span> </small>
+        <br>
+        <small class="ability">Ability: <span>${ability}</span></small>
     </div>
     `
 
